@@ -1,4 +1,4 @@
-# Episode 001: Introduction and Docker Basics
+# Episode 001: Docker
 
 - Hosted by @shashanktomar
 - Recording date: TODO
@@ -39,7 +39,7 @@ TODO
 - [ ] Image Basics
   - image commands
   - buildkit
-  - lets build few images
+  - let's build few images
 - [ ] Health Checks
   - ```
       docker run --name=hc -d --rm \
