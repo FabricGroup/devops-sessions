@@ -1,4 +1,4 @@
-# Fabric Devops Playlist Index
+# Fabric Tech Sessions Playlist
 
 ## Done
 
