@@ -9,9 +9,11 @@ TODO
 
 ## Agenda
 
-- [ ] Introduction and Inspiration
-  - About me, about Fabric and who is this for?
+- [ ] Introduction, Inspiration, Format and Audience
+  - about me, about Fabric and who is this for?
   - [tgik](tgik.io)
+  - the structure of the session
+  - who is this for?
 - [ ] Why do you need docker and what it is?
 
   - [Docker vs VM](./images/containers-vs-lxc-vs-vm.jpg)
@@ -71,7 +73,8 @@ TODO
 
 ### If time permits
 
-- [ ] Volumes
+- [ ] Storage
+  - bind mounts vs volumes vs tmpfs
 - [ ] Advance Topics
   - commit
   - checkpoints
