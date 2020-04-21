@@ -9,50 +9,36 @@ TODO
 
 ## Agenda
 
-- [ ] Inspiration and Introduction
+- [ ] Introduction and Inspiration
+  - About me, about Fabric and who is this for?
   - [tgik](tgik.io)
-  - lets make it a thing
 - [ ] Why do you need docker and what it is?
+
+  - [Docker vs VM](./images/containers-vs-lxc-vs-vm.jpg)
   - build once and run anywhere (★)
   - bring actual runtime closer to developers (★★)
   - abstraction creates innovation (★★★)
-- [ ] Docker vs VM
+
+- [ ] Image vs container
 - [ ] Let's get started
   - `docker version`
   - `docker info`
   - `docker help`
-- [ ] [Image vs container](./images/containers-vs-lxc-vs-vm.jpg)
 - [ ] Start a container and play around with it
   - `docker run -p 80:80 nginx`
   - cleanup and `--rm`
   - detach mode `-d`
+  - `attach`
   - expose port `-p` and `-P`
   - interactive `-it`
   - environment variable `-e`
+  - `exec`
   - other Commands
-    - `--build-arg`
     - working dir `-w` or `WORKDIR`
     - user `-u` or `USER`
     - `cp`
     - walk through `docker run --help`
     - walk through `docker --help`
-  - exec
-- [ ] Image Basics
-  - image commands
-    - walkthrough
-    - `ADD` vs `COPY`
-    - `ENTRYPOINT` vs `CMD`
-  - buildkit
-  - let's build few images
-  - best practices
-    - create ephemeral containers
-    - understand build context
-    - .dockerignore
-    - multistage builds
-    - keep your images thin
-    - decouple applications
-    - minimize the number of layers
-    - leverage build cache
 - [ ] Health Checks
   - ```
       docker run --name=hc -d --rm \
@@ -63,12 +49,38 @@ TODO
   - `watch -t "docker inspect hc | jq '.[0].State.Health.Status'"`
   - `docker exec hc rm /etc/passwd`
   - `docker exec hc touch /etc/passwd`
+- [ ] Image Basics
+
+  - let's build few images
+    - noose
+    - goose
+  - image commands
+    - walkthrough
+    - `ADD` vs `COPY`
+    - `ENTRYPOINT` vs `CMD`
+  - buildkit
+  - best practices
+    - create ephemeral containers
+    - understand build context
+    - .dockerignore
+    - multistage builds
+    - keep your images thin
+    - decouple applications
+    - minimize the number of layers: Only the instructions RUN, COPY, ADD create layers
+    - leverage build cache
+
+### If time permits
+
 - [ ] Volumes
-- [ ] Inspect
 - [ ] Advance Topics
   - commit
+  - checkpoints
 
 ## Show Notes
+
+### Comments
+
+### Feedback
 
 ## Reference Links
 
