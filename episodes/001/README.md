@@ -30,6 +30,7 @@ TODO
   - interactive `-it`
   - environment variable `-e`
   - other Commands
+    - `--build-arg`
     - working dir `-w` or `WORKDIR`
     - user `-u` or `USER`
     - `cp`
@@ -38,8 +39,20 @@ TODO
   - exec
 - [ ] Image Basics
   - image commands
+    - walkthrough
+    - `ADD` vs `COPY`
+    - `ENTRYPOINT` vs `CMD`
   - buildkit
   - let's build few images
+  - best practices
+    - create ephemeral containers
+    - understand build context
+    - .dockerignore
+    - multistage builds
+    - keep your images thin
+    - decouple applications
+    - minimize the number of layers
+    - leverage build cache
 - [ ] Health Checks
   - ```
       docker run --name=hc -d --rm \
@@ -60,4 +73,6 @@ TODO
 ## Reference Links
 
 - [tgik](tgik.io)
-- [Docker docs](https://docs.docker.com/reference/)
+- [Docker reference](https://docs.docker.com/reference/)
+- [Dockerfile best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+- [Docker Cheatsheet](./docker-cheatsheet.md)
