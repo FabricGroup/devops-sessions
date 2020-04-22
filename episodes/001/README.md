@@ -14,6 +14,7 @@ TODO
   - [tgik](tgik.io)
   - the structure of the session
   - who is this for?
+  - about potential stream issues
 - [ ] Why do you need docker and what it is?
 
   - [Docker vs VM](./images/containers-vs-lxc-vs-vm.jpg)
@@ -27,7 +28,7 @@ TODO
   - `docker info`
   - `docker help`
 - [ ] Start a container and play around with it
-  - `docker run -p 80:80 nginx`
+  - run few containers
   - cleanup and `--rm`
   - detach mode `-d`
   - `attach`
@@ -76,7 +77,12 @@ TODO
 - [ ] Storage
   - bind mounts vs volumes vs tmpfs
 - [ ] Advance Topics
+
   - commit
+
+    - `docker commit --change "ENV DEBUG true" <container-id> busybox/testimage:v1`
+    - `docker commit --change='CMD ["sleep", "10"]' <container-id> busybox/testimage:v2`
+
   - checkpoints
 
 ## Show Notes
@@ -91,3 +97,4 @@ TODO
 - [Docker reference](https://docs.docker.com/reference/)
 - [Dockerfile best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 - [Docker Cheatsheet](./docker-cheatsheet.md)
+- [Fabric Group](https://fabricgroup.com.au/)

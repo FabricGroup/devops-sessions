@@ -75,6 +75,7 @@
 - remove all exited containers: `docker rm $(docker ps -a -f status=exited -q)`
 - remove all exited or created(a state which can result when you run a container with an invalid command) containers: `docker rm $(docker ps -a -f status=exited -f status=created -q)`
 - stop and remove all containers: `docker stop $(docker ps -q) && docker rm $(docker ps -a -q)`
+- busybox incrementer: `docker run --rm busybox /bin/sh -c 'i=0; while true; do echo $i; i=$(expr $i + 1); sleep 1; done'`
 
 ### Volumes
 
