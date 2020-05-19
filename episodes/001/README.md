@@ -1,7 +1,7 @@
 # Episode 001: Docker
 
 - Hosted by @shashanktomar
-- Recording date: TODO
+- Recording date: 15/04/2020
 
 ## Video Checkpoints
 

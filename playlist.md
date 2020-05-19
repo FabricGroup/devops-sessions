@@ -2,18 +2,18 @@
 
 ## Done
 
-TODO
+- [001: Docker](episodes/001/README.md)
+  - proposed by @shashanktomar
+  - volunteered by @shashanktomar
 
 ## Upcoming
 
-- [001: Docker](episodes/001/README.md)
+- [002: Let's deploy a container on fargate](episodes/002/README.md)
   - proposed by @shashanktomar
   - volunteered by @shashanktomar
 
 ## Proposals
 
-- Deploying a container on AWS Fargate
-  - proposed by @shashanktomar
 - Docker Compose
   - proposed by @shashanktomar
 - AWS IAM wizardry
